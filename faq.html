@@ -172,8 +172,27 @@ Hoạt tính xúc tác của enzym chịu tác động bởi nhiều yếu tố.
                 </div> -->
             </div>
         </div>
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-0cc41a90-c47b-480c-99e4-c8d8d78dd6b2"></div>
+        <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-0cc41a90-c47b-480c-99e4-c8d8d78dd6b2"></div> -->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v9.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
         
 <!--- Footer -->
 <footer>
