@@ -135,19 +135,6 @@
 		</div>
 	</div>
 </footer> 
-<script>
-    var tagU = document.getElementById("nav--primary");
-    var tagA = tagU.getElementsByTagName("a");
-for (var i = 0; i < tagA.length; i++) {
-    tagA[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  if (current.length > 0) { 
-    current[0].className = current[0].className.replace(" active", "");
-  }
-  this.className += " active";
-  });
-}
-    </script>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
@@ -165,6 +152,20 @@ for (var i = 0; i < tagA.length; i++) {
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+<script>
+    var tagU = document.getElementById("nav--primary");
+    var tagA = tagU.getElementsByTagName("a");
+for (var i = 0; i < tagA.length; i++) {
+    tagA[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+    </script>
+
 
 </body>
 </html>
