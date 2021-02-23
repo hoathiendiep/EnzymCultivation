@@ -1,0 +1,27 @@
+/** @format */
+.profile {
+	width: 18rem;
+	height: 20rem;
+	margin-top: 3rem;
+	margin-left: 5rem;
+	border-radius: 15%;
+	box-shadow: 2px 3px 5px 0px rgb(58 55 55);
+}
+
+.col-lg-9 {
+	width: 100%;
+	padding-top: 2rem;
+	padding-left: 4rem;
+}
+h3 {
+	color: #727272;
+}
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size: 13.5px;
+}
+.col-lg-6 {
+	padding-left: 0px;
+	padding-right: 4rem;
+}

@@ -1,0 +1,29 @@
+/** @format */
+
+div.col-lg-6:nth-of-type(1) {
+	padding-left: 18rem;
+}
+.bd-content {
+	-ms-flex-order: 1;
+	order: 1;
+}
+.container-fluid img {
+	max-width: 500px;
+	max-height: 500px;
+}
+@media (min-width: 768px) {
+	.pl-md-5,
+	.px-md-5 {
+		padding-left: 3rem !important;
+	}
+	.pb-md-3,
+	.py-md-3 {
+		padding-bottom: 1rem !important;
+		padding-top: 1rem !important;
+	}
+	.col-md-9 {
+		-ms-flex: 0 0 75%;
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+}
