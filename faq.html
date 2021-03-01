@@ -7,6 +7,9 @@
         <title>Enzyme</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel = "icon" href =  
+        "image/logo_title.png" 
+                type = "image/x-icon"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -21,9 +24,12 @@
 <body>
     <!-- Navigation -->
 
-      <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="#"><img class="main-logo" src="image/logo.png" alt=""></a>
-        <div class="container-fluid navigation justify-content-center">
+        <div class="container-fluid navigation justify-content-center" style="display: table-cell;
+        vertical-align: middle;">
+            <div class="row">
                 <ul class="nav justify-content-around">
                     <li class="nav-item">
                         <a class="btn btn-light nav-link" type="button"  href="index.html">Home</a>
@@ -43,21 +49,37 @@
                           </div>
                             </li>
                             <li class="nav-item">
-                        <a class="btn btn-light nav-link" type="button" href="#">Service</a>
+                                <a class="btn btn-light nav-link" type="button" href="service.html">Service</a>
                             </li>
                             <li class="nav-item">
-                        <a class="btn btn-light nav-link" type="button" href="#">Reseach Finding</a>
+                                <a class="btn btn-light nav-link" type="button" href="research.html">Reseach Finding</a>
                             </li>
                     <li class="nav-item">
-                      <a class="btn btn-light nav-link" type="button" href="faq.html">FAQ</a>
-                  </li>
+                        <a class="btn btn-light nav-link" type="button" href="#">FAQ</a>
+                    </li>
                   <li class="nav-item">
-                    <a class="btn btn-light nav-link" type="button" href="#">Contact</a>
+                    <a class="btn btn-light nav-link" type="button" href="contact.html">Contact</a>
                 </li>
                 <li>
                     <i class="fa fa-phone fa_custom fa-2x"></i> <span class="text-danger">(+84)949 583 418</span>
                 </li>
                 </ul>
+            </div>
+            <div class="row" style="flex-direction: row-reverse;padding-right:2rem;padding-top:0.5rem">
+
+
+                <select class="vodiapicker">
+                    <option value="us" class="test" data-thumbnail="image/united-states.svg">English</option>
+                    <option value="vn" data-thumbnail="image/vietnam.svg">Vietnamese</option>
+              </select>
+        
+        <div class="lang-select">
+        <button class="btn-select" value=""></button>
+        <div class="b">
+        <ul id="a"></ul>
+        </div>
+        </div>
+            </div>
         </div>
     </nav>
         <!-- FAQ-->
@@ -66,7 +88,7 @@
             <br />
         
             <div class="" id="accordion">
-                <div class="faqHeader">General questions</div>
+                <div class="faqHeader">Frequently Asking Questions</div>
                 <div class="card ">
                     <div class="card-header card-custom card-custom">
                         <h4 class="card-header card-custom">
@@ -204,22 +226,83 @@ Hoạt tính xúc tác của enzym chịu tác động bởi nhiều yếu tố.
 		</div>
 	</div>
 </footer> 
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v9.0'
-        });
-      };
+   <!-- Load Facebook SDK for JavaScript -->
+   <div id="fb-root"></div>
+   <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         xfbml            : true,
+         version          : 'v10.0'
+       });
+     };
 
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+     (function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));</script>
+
+   <!-- Your Chat Plugin code -->
+   <div class="fb-customerchat"
+     attribution="setup_tool"
+     page_id="319274544847868">
+   </div>
+    <script>
+var langArray = [];
+$('.vodiapicker option').each(function () {
+	var img = $(this).attr('data-thumbnail');
+	var text = this.innerText;
+	var value = $(this).val();
+	var item =
+		'<li><img src="' +
+		img +
+		'" alt="" value="' +
+		value +
+		'"/><span>' +
+		text +
+		'</span></li>';
+	langArray.push(item);
+});
+
+$('#a').html(langArray);
+
+//Set the button value to the first el of the array
+$('.btn-select').html(langArray[0]);
+$('.btn-select').attr('value', 'en');
+
+//change button stuff on click
+$('#a li').click(function () {
+	var img = $(this).find('img').attr('src');
+	var value = $(this).find('img').attr('value');
+	var text = this.innerText;
+	var item =
+		'<li><img src="' + img + '" alt="" /><span>' + text + '</span></li>';
+	$('.btn-select').html(item);
+	$('.btn-select').attr('value', value);
+	$('.b').toggle();
+	//console.log(value);
+});
+
+$('.btn-select').click(function () {
+	$('.b').toggle();
+});
+
+//check local storage for the lang
+var sessionLang = localStorage.getItem('lang');
+if (sessionLang) {
+	//find an item with value of sessionLang
+	var langIndex = langArray.indexOf(sessionLang);
+	$('.btn-select').html(langArray[langIndex]);
+	$('.btn-select').attr('value', sessionLang);
+} else {
+	var langIndex = langArray.indexOf('ch');
+	console.log(langIndex);
+	$('.btn-select').html(langArray[langIndex]);
+	//$('.btn-select').attr('value', 'en');
+}
+
+</script>
 </body>
 </html>

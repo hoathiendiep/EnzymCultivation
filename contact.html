@@ -1,0 +1,360 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Enzyme</title>
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		/>
+		<link rel="icon" href="image/logo_title.png" type="image/x-icon" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+		<script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+		<!-- CSS only -->
+		<link href="index.css" rel="stylesheet" />
+		<link href="contact.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- Navigation -->
+
+		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+			<a class="navbar-brand" href="#"
+				><img class="main-logo" src="image/logo.png" alt=""
+			/></a>
+			<div
+				class="container-fluid navigation justify-content-center"
+				style="display: table-cell; vertical-align: middle"
+			>
+				<div class="row">
+					<ul class="nav justify-content-around">
+						<li class="nav-item">
+							<a class="btn btn-light nav-link" type="button" href="index.html"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="btn btn-light nav-link"
+								type="button"
+								href="aboutus.html"
+								>About us</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="btn btn-light nav-link dropdown-toggle"
+								type="button"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Product
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="mushroomculti.html"
+									>Enzyme for mushroom cultivation</a
+								>
+								<a class="dropdown-item" href="envitreatment.html"
+									>Enzyme for environmental treatment</a
+								>
+								<a class="dropdown-item" href="envifeed.html"
+									>Enzyme for feeding - Feed additives</a
+								>
+								<a class="dropdown-item" href="envifood.html"
+									>Enzyme for Maltose production</a
+								>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a
+								class="btn btn-light nav-link"
+								type="button"
+								href="service.html"
+								>Service</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="btn btn-light nav-link"
+								type="button"
+								href="research.html"
+								>Reseach Finding</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="btn btn-light nav-link" type="button" href="faq.html"
+								>FAQ</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="btn btn-light nav-link" type="button" href="#"
+								>Contact</a
+							>
+						</li>
+						<li>
+							<i class="fa fa-phone fa_custom fa-2x"></i>
+							<span class="text-danger">(+84)949 583 418</span>
+						</li>
+					</ul>
+				</div>
+				<div
+					class="row"
+					style="flex-direction: row-reverse; padding-right: 2rem"
+				>
+					<select class="vodiapicker">
+						<option
+							value="us"
+							class="test"
+							data-thumbnail="image/united-states.svg"
+						>
+							English
+						</option>
+						<option value="vn" data-thumbnail="image/vietnam.svg">
+							Vietnamese
+						</option>
+					</select>
+
+					<div class="lang-select">
+						<button class="btn-select" value=""></button>
+						<div class="b">
+							<ul id="a"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- Contact -->
+
+		<section class="u-align-center u-clearfix u-section-1" id="sec-1ac7">
+			<div class="u-clearfix u-sheet u-sheet-1">
+				<div
+					class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1"
+				>
+					<div class="u-gutter-0 u-layout">
+						<div class="u-layout-row row">
+							<div class="col-lg-12 padding">
+								<div class="u-layout-col">
+									<div
+										class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1"
+									>
+										<div class="u-container-layout u-container-layout-1">
+											<h2 class="u-text u-text-1">Enzyme Trồng Nấm</h2>
+											<p class="u-text u-text-2">
+												<span>Address:</span> No. 77, 26/3 St., Ha Tinh City, Ha
+												Tinh Province, Vietnam
+											</p>
+											<p class="u-text u-text-3">
+												<span>Phone Number:</span> +84 949 583 418
+											</p>
+											<p class="u-text u-text-4">
+												<span>Gmail:</span> diepquynhnhu@gmail.com
+											</p>
+										</div>
+									</div>
+									<!-- <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-2">
+                              <div class="u-container-layout u-valign-top u-container-layout-2">
+                                <div class="u-form u-form-1">
+                                  <form name="contactform"
+                                  action="contact-form-handler.php" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
+                                   style="padding: 10px" source="custom">
+                                    <div class="u-form-group u-form-name u-form-group-1">
+                                      <label for="name-5359" class="u-form-control-hidden u-label">Name</label>
+                                      <input type="text" placeholder="Name" id="name-5359" name="name"
+                                       class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="">
+                                    </div>
+                                    <div class="u-form-email u-form-group u-form-group-2">
+                                      <label for="email-5359" class="u-form-control-hidden u-label">Email</label>
+                                      <input type="email" placeholder="Email" id="email-5359" name="email" 
+                                      class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="">
+                                    </div>
+                                    <div class="u-form-group u-form-message u-form-group-3">
+                                      <label for="message-5359" class="u-form-control-hidden u-label">Message</label>
+                                      <textarea placeholder="Message" rows="4" cols="50" id="message-5359"
+                                       name="message" class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required=""></textarea>
+                                    </div>
+                                    <div class="u-form-group u-form-submit u-form-group-4">
+                                       <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
+                                       <input type="submit" value="Submit" class="u-btn u-btn-submit u-button-style">
+                                    </div>
+                                    <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
+                                    <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div>
+                                    <input type="hidden" value="" name="recaptchaResponse">
+                                   </form>
+                                </div>
+                              </div>
+                            </div>   -->
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="u-layout-col">
+									<div
+										class="u-align-left u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-3"
+									>
+										<div class="u-container-layout u-container-layout-3">
+											<div class="u-expanded u-grey-light-2 u-map">
+												<div class="embed-responsive">
+													<iframe
+														class="embed-responsive-item"
+														src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3787.2960357926504!2d105.90643231502891!3d18.333774079645064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31384f0fb88e3ff9%3A0x2621d5c6c742168b!2zRW56eW1lIFRy4buTbmcgTuG6pW0!5e0!3m2!1sen!2s!4v1614176479477!5m2!1sen!2s"
+														width="600"
+														height="450"
+														style="border: 0"
+														allowfullscreen=""
+														loading="lazy"
+													></iframe>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--- Footer -->
+		<footer>
+			<div class="container-fluid" style="background: #1f1f1f">
+				<div class="row text-center" style="margin-right: 0px">
+					<div class="col-md-12 col-xl-12">
+						<a href="https://www.facebook.com/diep.nhu" target="_blank">
+							<i class="fab fa-facebook fa-2x"></i>
+						</a>
+						<a
+							href="https://www.instagram.com/kencocoon/?hl=en"
+							target="_blank"
+						>
+							<i class="fab fa-instagram fa-2x"></i>
+						</a>
+						<a
+							href="https://www.researchgate.net/profile/Nhu_Diep"
+							target="_blank"
+						>
+							<i class="fab fa-researchgate fa-2x"></i>
+						</a>
+						<!-- <img src="img/w3newbie.png" alt="">
+                    <hr class="light">
+                    <p>555-555-555</p>
+                    <p>ht@gmail.com</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, quis cupiditate accusamus eaque minima.</p> -->
+					</div>
+					<div class="col-md-12 col-xl-12">
+						<p>No. 77, 26/3 St., Ha Tinh City, Ha Tinh Province, Vietnam</p>
+						<p>+84 949 583 418</p>
+						<p>diepquynhnhu@gmail.com</p>
+					</div>
+					<div
+						class="col-md-12 col-xl-12"
+						style="background: #000000; color: #919191"
+					>
+						<hr class="light" />
+						<h5>
+							Copyright &copy;2021 All rights reserved | This Website is made by
+							Dang Diep Hoa Thien
+						</h5>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function () {
+				FB.init({
+					xfbml: true,
+					version: 'v10.0',
+				});
+			};
+
+			(function (d, s, id) {
+				var js,
+					fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			})(document, 'script', 'facebook-jssdk');
+		</script>
+
+		<!-- Your Chat Plugin code -->
+		<div
+			class="fb-customerchat"
+			attribution="setup_tool"
+			page_id="319274544847868"
+		></div>
+		<script>
+			/** @format */
+
+			//test for getting url value from attr
+			// var img1 = $('.test').attr("data-thumbnail");
+			// console.log(img1);
+
+			//test for iterating over child elements
+			var langArray = [];
+			$('.vodiapicker option').each(function () {
+				var img = $(this).attr('data-thumbnail');
+				var text = this.innerText;
+				var value = $(this).val();
+				var item =
+					'<li><img src="' +
+					img +
+					'" alt="" value="' +
+					value +
+					'"/><span>' +
+					text +
+					'</span></li>';
+				langArray.push(item);
+			});
+
+			$('#a').html(langArray);
+
+			//Set the button value to the first el of the array
+			$('.btn-select').html(langArray[0]);
+			$('.btn-select').attr('value', 'en');
+
+			//change button stuff on click
+			$('#a li').click(function () {
+				var img = $(this).find('img').attr('src');
+				var value = $(this).find('img').attr('value');
+				var text = this.innerText;
+				var item =
+					'<li><img src="' + img + '" alt="" /><span>' + text + '</span></li>';
+				$('.btn-select').html(item);
+				$('.btn-select').attr('value', value);
+				$('.b').toggle();
+				//console.log(value);
+			});
+
+			$('.btn-select').click(function () {
+				$('.b').toggle();
+			});
+
+			//check local storage for the lang
+			var sessionLang = localStorage.getItem('lang');
+			if (sessionLang) {
+				//find an item with value of sessionLang
+				var langIndex = langArray.indexOf(sessionLang);
+				$('.btn-select').html(langArray[langIndex]);
+				$('.btn-select').attr('value', sessionLang);
+			} else {
+				var langIndex = langArray.indexOf('ch');
+				console.log(langIndex);
+				$('.btn-select').html(langArray[langIndex]);
+				//$('.btn-select').attr('value', 'en');
+			}
+		</script>
+	</body>
+</html>

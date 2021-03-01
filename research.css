@@ -1,0 +1,35 @@
+/** @format */
+
+.bd-sidebar {
+	background: #f5f3f3;
+}
+#sidebarMenu img {
+	width: 10rem;
+}
+#sidebarMenu .nav-link {
+	font-size: 14px;
+	color: #404040;
+}
+#sidebarMenu .active {
+	color: #007bff;
+}
+.list {
+	margin: 2rem 0px;
+}
+@media (min-width: 768px) {
+	.bd-links {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 5rem;
+		display: block !important;
+		height: calc(100vh - 7rem);
+		padding-left: 0.25rem;
+		margin-left: -0.25rem;
+		overflow-y: auto;
+	}
+}
+
+.bd-links {
+	overflow: auto;
+	font-weight: 600;
+}
