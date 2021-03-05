@@ -19,7 +19,7 @@
 		<script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 
 		<!-- CSS only -->
-		<link href="index.css" rel="stylesheet" />
+		<link href="indexVn.css" rel="stylesheet" />
 		<link href="mushroomculti.css" rel="stylesheet" />
 
 		<title>Document</title>
@@ -37,16 +37,19 @@
 				<div class="row">
 					<ul class="nav justify-content-around">
 						<li class="nav-item">
-							<a class="btn btn-light nav-link" type="button" href="index.html"
-								>Home</a
+							<a
+								class="btn btn-light nav-link"
+								type="button"
+								href="indexVn.html"
+								>Trang chủ</a
 							>
 						</li>
 						<li class="nav-item">
 							<a
 								class="btn btn-light nav-link"
 								type="button"
-								href="aboutus.html"
-								>About us</a
+								href="aboutusVn.html"
+								>Về chúng tôi</a
 							>
 						</li>
 						<li class="nav-item dropdown">
@@ -60,20 +63,20 @@
 								aria-haspopup="true"
 								aria-expanded="false"
 							>
-								Product
+								Sản phẩm
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="#"
-									>Enzyme for mushroom cultivation</a
+									>Enzym xử lý nguyên liệu trồng nấm</a
 								>
-								<a class="dropdown-item" href="envitreatment.html"
-									>Enzyme for environmental treatment</a
+								<a class="dropdown-item" href="envitreatmentVn.html"
+									>Enzym xử lý môi trường</a
 								>
-								<a class="dropdown-item" href="envifeed.html"
-									>Enzyme for feeding - Feed additives</a
+								<a class="dropdown-item" href="envifeedVn.html"
+									>Enzym bổ sung thức ăn gia súc, thủy sản</a
 								>
-								<a class="dropdown-item" href="envifood.html"
-									>Enzyme for Maltose production</a
+								<a class="dropdown-item" href="envifoodVn.html"
+									>Enzym sản xuất mạch nha</a
 								>
 							</div>
 						</li>
@@ -81,29 +84,29 @@
 							<a
 								class="btn btn-light nav-link"
 								type="button"
-								href="service.html"
-								>Service</a
+								href="serviceVn.html"
+								>Dịch vụ</a
 							>
 						</li>
 						<li class="nav-item">
 							<a
 								class="btn btn-light nav-link"
 								type="button"
-								href="research.html"
-								>Reseach Finding</a
+								href="researchVn.html"
+								>Kết quả nghiên cứu</a
 							>
 						</li>
 						<li class="nav-item">
-							<a class="btn btn-light nav-link" type="button" href="faq.html"
-								>FAQ</a
+							<a class="btn btn-light nav-link" type="button" href="faqVn.html"
+								>Hỏi đáp</a
 							>
 						</li>
 						<li class="nav-item">
 							<a
 								class="btn btn-light nav-link"
 								type="button"
-								href="contact.html"
-								>Contact</a
+								href="contactVn.html"
+								>Liên hệ</a
 							>
 						</li>
 						<li>
@@ -120,22 +123,15 @@
 						padding-top: 0.5rem;
 					"
 				>
-					<select
-						class="vodiapicker"
-						name="lang"
-						onchange="location = this.value;"
-					>
+					<select class="vodiapicker">
 						<option
-							value="#"
+							value="mushroomculti.html"
 							class="test"
 							data-thumbnail="image/united-states.svg"
 						>
 							English
 						</option>
-						<option
-							value="mushroomcultiVn.html"
-							data-thumbnail="image/vietnam.svg"
-						>
+						<option value="#" data-thumbnail="image/vietnam.svg">
 							Vietnamese
 						</option>
 					</select>
@@ -299,7 +295,7 @@
 			$('#a').html(langArray);
 
 			//Set the button value to the first el of the array
-			$('.btn-select').html(langArray[0]);
+			$('.btn-select').html(langArray[1]);
 			$('.btn-select').attr('value', 'en');
 
 			//change button stuff on click

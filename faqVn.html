@@ -17,8 +17,9 @@
         <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
         <script src="faq.js"></script>
         <!-- CSS only -->
-        <link href="index.css" rel="stylesheet">
+        <link href="indexVn.css" rel="stylesheet">
         <link href="faq.css" rel="stylesheet">
+
 <body>
     <!-- Navigation -->
 
@@ -30,33 +31,33 @@
             <div class="row">
                 <ul class="nav justify-content-around">
                     <li class="nav-item">
-                        <a class="btn btn-light nav-link" type="button"  href="index.html">Home</a>
+                        <a class="btn btn-light nav-link" type="button"  href="index.html">Trang chủ</a>
                             </li>
                             <li class="nav-item">
-                        <a class="btn btn-light nav-link" type="button" href="aboutus.html">About us</a>
+                        <a class="btn btn-light nav-link" type="button" href="aboutusVn.html">Về chúng tôi</a>
                             </li>
                     <li class="nav-item dropdown">
                         <a class="btn btn-light nav-link dropdown-toggle" type="button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Product
+                            Sản phẩm
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="mushroomculti.html">Enzyme for mushroom cultivation</a>
-                            <a class="dropdown-item" href="envitreatment.html">Enzyme for environmental treatment</a>
-                            <a class="dropdown-item" href="envifeed.html">Enzyme for feeding - Feed additives</a>
-                            <a class="dropdown-item" href="envifood.html">Enzyme for Maltose production</a>
+                            <a class="dropdown-item" href="mushroomcultiVn.html">Enzym xử lý nguyên liệu trồng nấm</a>
+                            <a class="dropdown-item" href="envitreatmentVn.html">Enzym xử lý môi trường</a>
+                            <a class="dropdown-item" href="envifeedVn.html">Enzym  bổ sung thức ăn gia súc, thủy sản</a>
+                            <a class="dropdown-item" href="envifoodVn.html">Enzym sản xuất mạch nha</a>
                           </div>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-light nav-link" type="button" href="service.html">Service</a>
+                                <a class="btn btn-light nav-link" type="button" href="serviceVn.html">Dịch vụ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-light nav-link" type="button" href="research.html">Reseach Finding</a>
+                                <a class="btn btn-light nav-link" type="button" href="researchVn.html">Kết quả nghiên cứu</a>
                             </li>
                     <li class="nav-item">
-                        <a class="btn btn-light nav-link" type="button" href="#">FAQ</a>
+                        <a class="btn btn-light nav-link" type="button" href="#">Hỏi đáp</a>
                     </li>
                   <li class="nav-item">
-                    <a class="btn btn-light nav-link" type="button" href="contact.html">Contact</a>
+                    <a class="btn btn-light nav-link" type="button" href="contactVn.html">Liên hệ</a>
                 </li>
                 <li>
                     <i class="fa fa-phone fa_custom fa-2x"></i> <span class="text-danger">(+84)949 583 418</span>
@@ -67,8 +68,8 @@
 
 
                 <select class="vodiapicker">
-                    <option value="#" class="test" data-thumbnail="image/united-states.svg">English</option>
-                    <option value="faqVn.html" data-thumbnail="image/vietnam.svg">Vietnamese</option>
+                    <option value="faq.html" class="test" data-thumbnail="image/united-states.svg">English</option>
+                    <option value="#" data-thumbnail="image/vietnam.svg">Vietnamese</option>
               </select>
         
         <div class="lang-select">
@@ -308,7 +309,7 @@ $('.vodiapicker option').each(function () {
 $('#a').html(langArray);
 
 //Set the button value to the first el of the array
-$('.btn-select').html(langArray[0]);
+$('.btn-select').html(langArray[1]);
 $('.btn-select').attr('value', 'en');
 
 //change button stuff on click

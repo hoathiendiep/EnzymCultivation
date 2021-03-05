@@ -63,9 +63,9 @@
             <div class="row" style="flex-direction: row-reverse;padding-right:2rem;padding-top:0.5rem">
 
 
-                <select class="vodiapicker">
-                    <option value="us" class="test" data-thumbnail="image/united-states.svg">English</option>
-                    <option value="vn" data-thumbnail="image/vietnam.svg">Vietnamese</option>
+                <select class="vodiapicker" name="lang" onchange="location = this.value;">
+                    <option value="#" class="test" data-thumbnail="image/united-states.svg">English</option>
+                    <option value="indexVn.html" data-thumbnail="image/vietnam.svg">Vietnamese</option>
               </select>
         
         <div class="lang-select">
@@ -241,6 +241,7 @@ $('#a li').click(function () {
 	$('.btn-select').attr('value', value);
 	$('.b').toggle();
 	//console.log(value);
+    window.location.href = $(this).find('img').attr('value');
 });
 
 $('.btn-select').click(function () {
