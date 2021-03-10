@@ -43,6 +43,9 @@ select.form-select option[value='VN'] {
 .padding {
 	padding-bottom: 2rem;
 }
+#a li :hover {
+	cursor: pointer;
+}
 /* .figure {
 	width: 100%;
 	background-image: url(image/depositphotos_7475729-stock-photo-mushroom-background.jpg);

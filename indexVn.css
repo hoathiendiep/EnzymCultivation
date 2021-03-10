@@ -204,7 +204,9 @@ iframe {
 .btn-select:hover li {
 	margin-left: 0px;
 }
-
+#a li :hover {
+	cursor: pointer;
+}
 .btn-select:hover {
 	background-color: #f4f3f3;
 	border: 1px solid transparent;
